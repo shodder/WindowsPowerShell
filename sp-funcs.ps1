@@ -4,9 +4,9 @@
 ###########################
 
 $servers = @{
-    'devfe' = 'fitnlabsspdev1.isis.cclrc.ac.uk';
+    'devapp' = 'fitnlabsspdev1.isis.cclrc.ac.uk';
     'dev2' = 'fitnlabsspdev2.isis.cclrc.ac.uk';
-    'devapp' = 'fitnlabsspdev3.isis.cclrc.ac.uk';
+    'devfe' = 'fitnlabsspdev3.isis.cclrc.ac.uk';
     'devsql' = 'fitnlabsqldev1.isis.cclrc.ac.uk';
     'prodsql' = 'fitnlabsqldev1.isis.cclrc.ac.uk'
 }
