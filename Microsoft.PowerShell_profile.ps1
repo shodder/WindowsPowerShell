@@ -34,6 +34,7 @@ function global:prompt {
 Import-Module .\sp-funcs.ps1 -Force
 Import-Module .\vim-funcs.ps1 -Force
 Import-Module .\childitem-colors.ps1 -Force
+Import-Module .\ps-readline-settings.ps1 -Force
 
 # Always import aliases last as they can rely
 # on functions in custom .ps1 files
