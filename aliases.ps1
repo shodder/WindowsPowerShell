@@ -2,7 +2,14 @@
 ###########################
 # Commands
 ###########################
+
+# Set unix-like which
 Set-Alias which Get-Command
+
+# set unix-like ls functions (using functions from childitem-colors.ps1
+Set-Alias ls Get-ChildItem-Color -option AllScope
+Set-Alias l Get-ChildItem-Format-Wide -option AllScope
+
 
 
 ###########################
