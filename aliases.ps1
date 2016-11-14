@@ -11,6 +11,15 @@ Set-Alias ls Get-ChildItem-Color -option AllScope
 Set-Alias l Get-ChildItem-Format-Wide -option AllScope
 
 
+# set unix-like tail
+Function tail {
+    param(
+      [String]$File
+    )
+
+    Get-Content -Tail 10 -Wait -Path $File
+}
+
 
 ###########################
 # Shortcuts
