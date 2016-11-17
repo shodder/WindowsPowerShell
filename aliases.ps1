@@ -21,6 +21,18 @@ Function tail {
 }
 
 
+Remove-Item alias:touch
+
+# set unix-like touch
+function touch {
+    param(
+      [String]$Path
+    )
+
+    New-Item -Type File -Path $Path
+}
+
+
 ###########################
 # Shortcuts
 ###########################
