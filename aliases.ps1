@@ -20,8 +20,9 @@ Function tail {
     Get-Content -Tail 10 -Wait -Path $File
 }
 
-
-Remove-Item alias:touch
+if (Test-Path alias:touch) {
+    Remove-Item alias:touch
+}
 
 # set unix-like touch
 function touch {
