@@ -6,6 +6,8 @@
 $VimPath = "C:/gvim/./vim.exe"
 set-alias vim $VimPath
 
+$GvimPath = "C:/gvim/./gvim.exe"
+
 function view {
     Param(
         [parameter(Mandatory=$true)]
@@ -26,4 +28,12 @@ Function Edit-Vimrc {
     vim $HOME\.vimrc
 }
 
+# Open GVIM at current location
+function gvim {
+    param(
+        [string]$FolderPath = '.'
+    )
+
+    & $GvimPath $FolderPath
+}
 
