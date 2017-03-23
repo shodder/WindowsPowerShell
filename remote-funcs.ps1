@@ -21,7 +21,7 @@ Function Enter-SP {
     Enter-PSSession -computername $server
 }
 
-Function Start-SPRemote {
+Function Enter-Session {
     param(
       [String]$ServerName='dev2',
       [String]$UserName='clrc\mhr39349'
@@ -30,6 +30,7 @@ Function Start-SPRemote {
     $server=$servers.Get_Item($ServerName)
 
     Start-Process "$env:windir\system32\mstsc.exe" -ArgumentList "/v:$server"
-
+    $session = New-PSSession $ServerName -Authentication Credssp -Credential clrc\mhr39349
+    Enter-PSSession -SessionOption (New-PSSession "fitnlabsspdev3.isis.cclrc.ac.uk" -Authentication Credssp -Credential clrc\mhr39349)
 }
 

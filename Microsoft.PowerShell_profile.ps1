@@ -31,7 +31,7 @@ function global:prompt {
 # Import my funcs
 # File must be in same loc
 ###########################
-Import-Module .\sp-funcs.ps1 -Force
+Import-Module .\remote-funcs.ps1 -Force
 Import-Module .\vim-funcs.ps1 -Force
 Import-Module .\childitem-colors.ps1 -Force
 Import-Module .\ps-readline-settings.ps1 -Force
