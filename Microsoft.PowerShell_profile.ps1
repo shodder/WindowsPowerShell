@@ -14,17 +14,17 @@ Import-Module posh-git
 function global:prompt {
     $realLASTEXITCODE = $LASTEXITCODE
 
-    Write-Host($env:username) -nonewline -foregroundcolor 'darkmagenta'
+    Write-Host($env:username) -nonewline -foregroundcolor 'magenta'
     Write-Host(' at ') -nonewline -foregroundcolor 'white'
-    Write-Host($env:computername) -nonewline -foregroundcolor 'darkyellow'
+    Write-Host($env:computername) -nonewline -foregroundcolor 'yellow'
     Write-Host(' in ') -nonewline -foregroundcolor 'white'
-    Write-Host($pwd.ProviderPath) -nonewline -foregroundcolor 'darkgreen'
+    Write-Host($pwd.ProviderPath) -nonewline -foregroundcolor 'green'
 
     Write-VcsStatus
     Write-Host("")
 
     $global:LASTEXITCODE = $realLASTEXITCODE
-    return "$ "
+    return ">_ "
 }
 
 ###########################
