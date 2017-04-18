@@ -38,7 +38,7 @@ function touch {
 # Shortcuts
 ###########################
 $workspace = Join-Path -Path $HOME -ChildPath 'workspace'
-$isis = Join-Path -Path $workspace -ChildPath 'isisbusapps'
+$bus = Join-Path -Path $workspace -ChildPath 'isisbusapps'
 $si = Join-Path -Path $isis -ChildPath 'sisites'
 
 $ps = Join-Path -Path $HOME -ChildPath 'Documents/WindowsPowerShell'
@@ -47,7 +47,7 @@ $dots = Join-Path -Path $HOME -ChildPath 'dotfiles'
 # Shortcut functions
 function go-ws { cd $workspace }
 function go-si { cd $si }
-function go-isis { cd $isis }
+function go-bus { cd $bus }
 function go-dots { cd $dots }
 function go-ps { cd $ps }
 
