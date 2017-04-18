@@ -39,7 +39,7 @@ function touch {
 ###########################
 $workspace = Join-Path -Path $HOME -ChildPath 'workspace'
 $bus = Join-Path -Path $workspace -ChildPath 'isisbusapps'
-$si = Join-Path -Path $isis -ChildPath 'sisites'
+$si = Join-Path -Path $bus -ChildPath 'sisites'
 
 $ps = Join-Path -Path $HOME -ChildPath 'Documents/WindowsPowerShell'
 $dots = Join-Path -Path $HOME -ChildPath 'dotfiles'
