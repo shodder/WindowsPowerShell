@@ -44,4 +44,11 @@ $si = Join-Path -Path $isis -ChildPath 'sisites'
 $ps = Join-Path -Path $HOME -ChildPath 'Documents/WindowsPowerShell'
 $dots = Join-Path -Path $HOME -ChildPath 'dotfiles'
 
+# Shortcut functions
+function go-ws { cd $workspace }
+function go-si { cd $si }
+function go-isis { cd $isis }
+function go-dots { cd $dots }
+function go-ps { cd $ps }
+
 
