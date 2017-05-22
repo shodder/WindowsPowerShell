@@ -38,6 +38,7 @@ function touch {
 # Shortcuts
 ###########################
 $workspace = Join-Path -Path $HOME -ChildPath 'workspace'
+$scratch = Join-Path -Path $workspace -ChildPath 'scratch'
 $bus = Join-Path -Path $workspace -ChildPath 'isisbusapps'
 $si = Join-Path -Path $bus -ChildPath 'sisites'
 
@@ -46,6 +47,7 @@ $dots = Join-Path -Path $HOME -ChildPath 'dotfiles'
 
 # Shortcut functions
 function go-ws { cd $workspace }
+function go-scratch { cd $scratch }
 function go-si { cd $si }
 function go-bus { cd $bus }
 function go-dots { cd $dots }
