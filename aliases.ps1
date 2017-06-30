@@ -48,7 +48,7 @@ $dots = Join-Path -Path $HOME -ChildPath 'dotfiles'
 # Shortcut functions
 function ws { cd $workspace }
 function scratch { cd $scratch }
-function si { cd $si }
+function sites { cd $si }
 function bus { cd $bus }
 function dots { cd $dots }
 function pshome { cd $ps }
