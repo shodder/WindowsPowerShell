@@ -46,11 +46,11 @@ $ps = Join-Path -Path $HOME -ChildPath 'Documents/WindowsPowerShell'
 $dots = Join-Path -Path $HOME -ChildPath 'dotfiles'
 
 # Shortcut functions
-function go-ws { cd $workspace }
-function go-scratch { cd $scratch }
-function go-si { cd $si }
-function go-bus { cd $bus }
-function go-dots { cd $dots }
-function go-ps { cd $ps }
+function ws { cd $workspace }
+function scratch { cd $scratch }
+function si { cd $si }
+function bus { cd $bus }
+function dots { cd $dots }
+function pshome { cd $ps }
 
 
