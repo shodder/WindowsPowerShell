@@ -52,5 +52,6 @@ function sites { cd $si }
 function bus { cd $bus }
 function dots { cd $dots }
 function pshome { cd $ps }
+function gogo { cd $env:GOPATH }
 
 
