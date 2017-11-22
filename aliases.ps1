@@ -34,6 +34,15 @@ function touch {
 }
 
 
+# unix like find
+function find {
+    param(
+        [String]$Pattern
+    )
+
+    Get-ChildItem -Recurse | Select-String -Pattern $Pattern | Select-Object {"File::$($_.Path)`r`nLine-No::$($_.LineNumber)`r`n$($_.Line)`r`n" }  | Format-Table -Wrap 
+}
+
 ###########################
 # Shortcuts
 ###########################
@@ -46,12 +55,12 @@ $ps = Join-Path -Path $HOME -ChildPath 'Documents/WindowsPowerShell'
 $dots = Join-Path -Path $HOME -ChildPath 'dotfiles'
 
 # Shortcut functions
-function ws { cd $workspace }
-function scratch { cd $scratch }
-function sites { cd $si }
-function bus { cd $bus }
-function dots { cd $dots }
-function pshome { cd $ps }
-function gogo { cd $env:GOPATH }
+function ws { Set-Location $workspace }
+function scratch { Set-Location $scratch }
+function sites { Set-Location $si }
+function bus { Set-Location $bus }
+function dots { Set-Location $dots }
+function pshome { Set-Location $ps }
+function gogo { Set-Location $env:GOPATH }
 
 
