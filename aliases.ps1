@@ -37,10 +37,15 @@ function touch {
 # unix like find
 function find {
     param(
-        [String]$Pattern
+        [String]$Pattern,
+        [Switch]$PathOnly
     )
 
-    Get-ChildItem -Recurse | Select-String -Pattern $Pattern | Select-Object {"File::$($_.Path)`r`nLine-No::$($_.LineNumber)`r`n$($_.Line)`r`n" }  | Format-Table -Wrap 
+    if ($PathOnly ) {
+        Get-ChildItem -Recurse | Select-String -Pattern $Pattern | Select-Object {"$($_.Path)::$($_.LineNumber)"} | Format-Table -AutoSize
+    } else {
+        Get-ChildItem -Recurse | Select-String -Pattern $Pattern | Select-Object {"File::$($_.Path)`r`nLine-No::$($_.LineNumber)`r`n$($_.Line)`r`n" }  | Format-Table -Wrap 
+    }
 }
 
 ###########################
