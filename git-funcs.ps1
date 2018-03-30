@@ -22,7 +22,7 @@ New-Alias -Name gc -Value Get-GitCommit -Force -Option AllScope
 function Get-GitPull { & git pull $args }
 New-Alias -Name gpull -Value Get-GitPull -Force -Option AllScope
 
-function Get-GitPush { & git pull $args }
+function Get-GitPush { & git push $args }
 New-Alias -Name gpush -Value Get-GitPush -Force -Option AllScope
 
 function Get-GitReset { & git reset $args }
