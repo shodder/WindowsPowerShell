@@ -56,6 +56,8 @@ $scratch = Join-Path -Path $workspace -ChildPath 'scratch'
 $bus = Join-Path -Path $workspace -ChildPath 'isisbusapps'
 $si = Join-Path -Path $bus -ChildPath 'sisites'
 $users = Join-Path -Path $bus -ChildPath 'Users'
+$userofficetools = Join-Path -Path $bus -ChildPath 'UserOfficeTools'
+$messages = Join-Path -Path $bus -ChildPath 'Messages'
 
 $ps = Join-Path -Path $HOME -ChildPath 'Documents/WindowsPowerShell'
 $dots = Join-Path -Path $HOME -ChildPath 'dotfiles'
@@ -66,6 +68,8 @@ function scratch { Set-Location $scratch }
 function bus { Set-Location $bus }
 function sites { Set-Location $si }
 function users { Set-Location $users }
+function userofficetools { Set-Location $userofficetools }
+function messages { Set-Location $messages }
 function dots { Set-Location $dots }
 function pshome { Set-Location $ps }
 function gogo { Set-Location $env:GOPATH }
