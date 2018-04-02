@@ -71,7 +71,10 @@ function users { Set-Location $users }
 function userofficetools { Set-Location $userofficetools }
 function messages { Set-Location $messages }
 function dots { Set-Location $dots }
-function pshome { Set-Location $ps }
+function profile { Set-Location $ps }
 function gogo { Set-Location $env:GOPATH }
 
-
+function onedrive {
+    cd 'C:\Users\mhr39349\OneDrive - Science and Technology Facilities Council'
+    explorer .
+}
