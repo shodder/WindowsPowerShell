@@ -46,3 +46,8 @@ function Open-PayaraAdmin {
     & "C:\Program Files\Mozilla Firefox\firefox.exe" $Url
 }
 
+function Run-OracleDev {
+    & 'C:\Users\mhr39349\programs\oracle-developer\sqldeveloper.exe'
+}
+
+New-Alias -Name oracledev -Value Run-OracleDev -Force -Option AllScope
