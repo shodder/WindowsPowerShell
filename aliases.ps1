@@ -62,6 +62,9 @@ $messages = Join-Path -Path $bus -ChildPath 'Messages'
 $ps = Join-Path -Path $HOME -ChildPath 'Documents/WindowsPowerShell'
 $dots = Join-Path -Path $HOME -ChildPath 'dotfiles'
 
+$gopath = $env:GOPATH
+$releasenotes = Join-Path -Path $env:GOPATH -ChildPath 'src\github.com\isisbusapps\releasenotesgenerator'
+
 # Shortcut functions
 function ws { Set-Location $workspace }
 function scratch { Set-Location $scratch }
@@ -73,6 +76,7 @@ function messages { Set-Location $messages }
 function dots { Set-Location $dots }
 function profile { Set-Location $ps }
 function gogo { Set-Location $env:GOPATH }
+function releasenotes { Set-Location $releasenotes }
 
 function onedrive {
     cd 'C:\Users\mhr39349\OneDrive - Science and Technology Facilities Council'
