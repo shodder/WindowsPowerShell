@@ -20,22 +20,26 @@ function Get-GitCommit { & git commit $args }
 New-Alias -Name gc -Value Get-GitCommit -Force -Option AllScope
 
 function Get-GitPull { & git pull $args }
-New-Alias -Name gpull -Value Get-GitPull -Force -Option AllScope
+New-Alias -Name pull -Value Get-GitPull -Force -Option AllScope
 
 function Get-GitPush { & git push $args }
-New-Alias -Name gpush -Value Get-GitPush -Force -Option AllScope
+New-Alias -Name push -Value Get-GitPush -Force -Option AllScope
 
 function Get-GitReset { & git reset $args }
 New-Alias -Name gr -Value Get-GitReset -Force -Option AllScope
 
 function Get-GitUnstage { & git reset HEAD }
-New-Alias -Name gunstage -Value Get-GitUnstage -Force -Option AllScope
+New-Alias -Name unstage -Value Get-GitUnstage -Force -Option AllScope
 
 function Get-GitCheckout { & git checkout $args }
 New-Alias -Name gco -Value Get-GitCheckout -Force -Option AllScope
 
 function Get-GitDiff { & git diff $args }
 New-Alias -Name gd -Value Get-GitDiff -Force -Option AllScope
+
+function Get-GitStash { & git stash $args }
+New-Alias -Name stash -Value Get-GitStash -Force -Option AllScope
+
 
 ######################################################################
 ## Some nice git log formats
