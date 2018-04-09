@@ -48,42 +48,4 @@ function find {
     }
 }
 
-###########################
-# Shortcuts
-###########################
-$workspace = Join-Path -Path $HOME -ChildPath 'workspace'
-$scratch = Join-Path -Path $workspace -ChildPath 'scratch'
-$bus = Join-Path -Path $workspace -ChildPath 'isisbusapps'
-$si = Join-Path -Path $bus -ChildPath 'sisites'
-$users = Join-Path -Path $bus -ChildPath 'Users'
-$userofficetools = Join-Path -Path $bus -ChildPath 'UserOfficeTools'
-$messages = Join-Path -Path $bus -ChildPath 'Messages'
 
-$ps = Join-Path -Path $HOME -ChildPath 'Documents/WindowsPowerShell'
-$dots = Join-Path -Path $HOME -ChildPath 'dotfiles'
-
-$gopath = $env:GOPATH
-$releasenotes = Join-Path -Path $env:GOPATH -ChildPath 'src\github.com\isisbusapps\releasenotesgenerator'
-
-$fbs = 'C:\fbs\apps'
-$bissettings = $fbs
-
-# Shortcut functions
-function ws { Set-Location $workspace }
-function scratch { Set-Location $scratch }
-function bus { Set-Location $bus }
-function sites { Set-Location $si }
-function users { Set-Location $users }
-function userofficetools { Set-Location $userofficetools }
-function messages { Set-Location $messages }
-function dots { Set-Location $dots }
-function profile { Set-Location $ps }
-function gogo { Set-Location $env:GOPATH }
-function releasenotes { Set-Location $releasenotes }
-function fbs { Set-Location $fbs }
-function bissettings { Set-Location $bissettings }
-
-function onedrive {
-    cd 'C:\Users\mhr39349\OneDrive - Science and Technology Facilities Council'
-    explorer .
-}
