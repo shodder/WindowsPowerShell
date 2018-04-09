@@ -65,6 +65,9 @@ $dots = Join-Path -Path $HOME -ChildPath 'dotfiles'
 $gopath = $env:GOPATH
 $releasenotes = Join-Path -Path $env:GOPATH -ChildPath 'src\github.com\isisbusapps\releasenotesgenerator'
 
+$fbs = 'C:\fbs\apps'
+$bissettings = $fbs
+
 # Shortcut functions
 function ws { Set-Location $workspace }
 function scratch { Set-Location $scratch }
@@ -77,6 +80,8 @@ function dots { Set-Location $dots }
 function profile { Set-Location $ps }
 function gogo { Set-Location $env:GOPATH }
 function releasenotes { Set-Location $releasenotes }
+function fbs { Set-Location $fbs }
+function bissettings { Set-Location $bissettings }
 
 function onedrive {
     cd 'C:\Users\mhr39349\OneDrive - Science and Technology Facilities Council'
