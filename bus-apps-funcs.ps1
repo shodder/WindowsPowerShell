@@ -5,7 +5,7 @@ function Start-Domain {
         [String]$Debug=$false,
         [String]$LaunchAdminWindow=$true
     )
-    Set-Location "C:\payara\installations\payara-4.1.2.172\payara41\bin"
+    Push-Location "C:\payara\installations\payara-4.1.2.172\payara41\bin"
 
     $debugSwitch = ""
     if ($debug) {
@@ -14,16 +14,20 @@ function Start-Domain {
 
     .\asadmin.bat start-domain $debugSwitch --domaindir C:\payara\domains "domain$DomainNumber"
     if ($LaunchAdminWindow) {
-        Open-PayaraAdmin
+        Open-PayaraAdmin -DomainNumber $DomainNumber
     }
+
+    Pop-Location
 }
 
 function Stop-Domain {
     param(
         [String]$DomainNumber="1"
     )
-    Set-Location "C:\payara\installations\payara-4.1.2.172\payara41\bin"
+
+    Push-Location "C:\payara\installations\payara-4.1.2.172\payara41\bin"
     .\asadmin.bat stop-domain --domaindir C:\payara\domains "domain$DomainNumber"
+    Pop-Location
 }
 
 function Restart-Domain {
@@ -32,18 +36,22 @@ function Restart-Domain {
         [String]$Debug=$false,
         [String]$LaunchAdminWindow=$true
     )
-    Stop-Domain
-    Start-Domain `
-        -DomainNumber $DomainNumber `
-        -Debug $Debug `
-        -LaunchAdminWindow $LaunchAdminWindow
+    Stop-Domain -DomainNumber $DomainNumber
+    Start-Domain -DomainNumber $DomainNumber -Debug $Debug -LaunchAdminWindow $LaunchAdminWindow
 }
 
 function Open-PayaraAdmin {
     param(
-        [String]$Url="http://localhost:4848"
+        [String]$Url="http://localhost",
+        [String]$DomainNumber="1"
     )
-    & "C:\Program Files\Mozilla Firefox\firefox.exe" $Url
+    if ($DomainNumber -eq "1") {
+        $urlWithPort = $Url + ":4848"
+    } else {
+        $urlWithPort = $Url + ":15562"
+    }
+
+    & "C:\Program Files\Mozilla Firefox\firefox.exe" $urlWithPort
 }
 
 
