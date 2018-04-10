@@ -10,6 +10,10 @@ Set-Alias which Get-Command
 Set-Alias ls Get-ChildItem-Color -option AllScope
 Set-Alias l Get-ChildItem-Format-Wide -option AllScope
 
+# set unix like pushd and popd
+Set-Alias pushd Push-Location -option AllScope
+Set-Alias popd Pop-Location -option AllScope
+
 
 # set unix-like tail
 Function tail {
