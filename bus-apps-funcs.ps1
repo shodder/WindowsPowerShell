@@ -54,6 +54,16 @@ function Open-PayaraAdmin {
     & "C:\Program Files\Mozilla Firefox\firefox.exe" $urlWithPort
 }
 
+function Open-Repo {
+    param(
+        [String]$Repo="Users"
+    )
+
+    $url = "https://www.github.com/isisbusapps/" + $Repo
+    & "C:\Program Files\Mozilla Firefox\firefox.exe" $url
+}
+
+New-Alias -Name github -Value Open-Repo -Force -Option AllScope
 
 ###########################
 # Shortcuts
