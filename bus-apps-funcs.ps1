@@ -78,11 +78,12 @@ function Start-VisualStudioAsAdmin {
 New-Alias -Name vsadmin -Value Start-VisualStudioAsAdmin -Force -Option AllScope
 
 
-function Open-FirefoxMorningTime {
+function Start-InTheMorning {
+    & "C:\Program Files (x86)\Microsoft Office\Office16\OUTLOOK.EXE"
     & "C:\Program Files\Mozilla Firefox\firefox.exe" 'https://www.gmail.com' 'https://trello.com/b/o1PxTdzd/init' 'https://github.com/orgs/isisbusapps/dashboard'
 }
 
-New-Alias -Name ff -Value Open-FirefoxMorningTime -Force -Option AllScope
+New-Alias -Name start -Value Start-InTheMorning -Force -Option AllScope
 
 ###########################
 # Shortcuts
