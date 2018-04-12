@@ -82,7 +82,7 @@ function Open-FirefoxMorningTime {
     & "C:\Program Files\Mozilla Firefox\firefox.exe" 'https://www.gmail.com' 'https://trello.com/b/o1PxTdzd/init' 'https://github.com/orgs/isisbusapps/dashboard'
 }
 
-New-Alias -Name morning -Value Open-FirefoxMorningTime -Force -Option AllScope
+New-Alias -Name ff -Value Open-FirefoxMorningTime -Force -Option AllScope
 
 ###########################
 # Shortcuts
