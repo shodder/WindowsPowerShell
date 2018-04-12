@@ -77,6 +77,13 @@ function Start-VisualStudioAsAdmin {
 
 New-Alias -Name vsadmin -Value Start-VisualStudioAsAdmin -Force -Option AllScope
 
+
+function Open-FirefoxMorningTime {
+    & "C:\Program Files\Mozilla Firefox\firefox.exe" 'https://www.gmail.com' 'https://www.wunderlist.com' 'https://www.github.com'
+}
+
+New-Alias -Name morning -Value Open-FirefoxMorningTime -Force -Option AllScope
+
 ###########################
 # Shortcuts
 ###########################
