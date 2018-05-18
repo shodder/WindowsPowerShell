@@ -119,6 +119,7 @@ function gogo { Set-Location $env:GOPATH }
 function releasenotes { Set-Location $releasenotes }
 function fbs { Set-Location $fbs }
 function bissettings { Set-Location $bissettings }
+function releasenotes { Set-Location $releasenotes }
 
 function onedrive {
     cd 'C:\Users\mhr39349\OneDrive - Science and Technology Facilities Council'
