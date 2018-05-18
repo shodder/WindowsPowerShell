@@ -57,7 +57,7 @@ function find {
         [Parameter(Mandatory=$true)]
         [String] $Path,
         [Parameter(Mandatory=$true)]
-        [String] $Patten,
+        [String] $Pattern,
         [Switch] $Recurse
     )
 
