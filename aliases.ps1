@@ -37,9 +37,8 @@ function touch {
     New-Item -Type File -Path $Path
 }
 
-
-# unix like find
-function find {
+# unix like ag
+function ag {
     param(
         [String]$Pattern,
         [Switch]$PathOnly
@@ -52,4 +51,21 @@ function find {
     }
 }
 
+# unix like find
+function find {
+    param(
+        [Parameter(Mandatory=$true)]
+        [String] $Path,
+        [Parameter(Mandatory=$true)]
+        [String] $Patten,
+        [Switch] $Recurse
+    )
 
+    
+
+    if ($Recurse) {
+        Get-ChildItem $Path -Recurse | Where{$_.Name -Match [Regex]::Escape($Pattern)}
+    } else {
+        Get-ChildItem $Path | Where{$_.Name -Match [Regex]::Escape($Pattern)}
+    }
+}
