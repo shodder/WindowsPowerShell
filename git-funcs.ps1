@@ -40,6 +40,11 @@ New-Alias -Name gd -Value Get-GitDiff -Force -Option AllScope
 function Get-GitStash { & git stash $args }
 New-Alias -Name stash -Value Get-GitStash -Force -Option AllScope
 
+function Get-DevelopBranch{ & git checkout develop }
+New-Alias -Name dev -Value Get-DevelopBranch -Force -Option AllScope
+
+function Get-MasterBranch{ & git checkout master }
+New-Alias -Name master -Value Get-MasterBranch -Force -Option AllScope
 
 ######################################################################
 ## Some nice git log formats
