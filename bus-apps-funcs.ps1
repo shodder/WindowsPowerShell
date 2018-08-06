@@ -81,9 +81,15 @@ New-Alias -Name vsadmin -Value Start-VisualStudioAsAdmin -Force -Option AllScope
 function Start-CommonApps {
     & "C:\Program Files (x86)\Microsoft Office\Office16\OUTLOOK.EXE"
     & "C:\Program Files\Mozilla Firefox\firefox.exe" `
-        'https://www.gmail.com' 'https://trello.com/b/EZVcf2Bw/to-do' `
-        'https://trello.com/b/o1PxTdzd/init' 'https://trello.com/b/6jFgwstk/sp-guild' `
-        'https://github.com/orgs/isisbusapps/dashboard'
+        'https://www.gmail.com' `
+        'https://github.com/orgs/isisbusapps/dashboard' `
+        'https://github.com/pulls?utf8=%E2%9C%93&q=is%3Aopen+org%3Aisisbusapps+label%3A%22please+review%22+sort%3Aupdated-asc+-repo%3Aisisbusapps%2Fsandbox' `
+        'https://trello.com/b/o1PxTdzd/init' `
+        'https://tasks.office.com/stfc365.onmicrosoft.com/en-US/Home/Planner/#/plantaskboard?groupId=2d7724fc-0300-45a7-8c7b-c44dba2d283c&planId=zcyat3kNxEyOaWwiVhRIDpYAF9iJ' `
+        'https://trello.com/b/EZVcf2Bw/to-do' `
+        'https://github.com/orgs/isisbusapps/projects/7'
+
+    exit
 }
 
 New-Alias -Name launch -Value Start-CommonApps -Force -Option AllScope
