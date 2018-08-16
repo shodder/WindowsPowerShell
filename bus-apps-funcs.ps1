@@ -84,7 +84,8 @@ function Start-CommonApps {
         'https://www.gmail.com' `
         'https://github.com/orgs/isisbusapps/dashboard' `
         'https://github.com/pulls?utf8=%E2%9C%93&q=is%3Aopen+org%3Aisisbusapps+label%3A%22please+review%22+sort%3Aupdated-asc+-repo%3Aisisbusapps%2Fsandbox' `
-        'https://github.com/orgs/isisbusapps/projects/7'
+        'https://github.com/orgs/isisbusapps/projects/7' `
+        'https://github.com/orgs/isisbusapps/projects/9?card_filter_query=author%3Ashodder'
     & 'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe' `
         'https://trello.com/b/o1PxTdzd/init' `
         'https://trello.com/b/m8QDurrA/guild' `
