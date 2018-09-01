@@ -87,10 +87,10 @@ function Start-CommonApps {
         'https://github.com/orgs/isisbusapps/projects/7' `
         'https://github.com/orgs/isisbusapps/projects/9?card_filter_query=author%3Ashodder'
     & 'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe' `
-        'https://trello.com/b/o1PxTdzd/init' `
-        'https://trello.com/b/m8QDurrA/guild' `
+        'https://trello.com/b/o1PxTdzd/mi-tabla' `
+        'https://tasks.office.com/stfc365.onmicrosoft.com/en-US/Home/Planner' `
         'https://trello.com/b/Mdz1UwRy/projects-2018' `
-        'https://trello.com/b/EZVcf2Bw/to-do' `
+        'https://trello.com/b/EZVcf2Bw/init' `
         'https://trello.com/b/x07EBJGu/sw-dev'
 
     exit
