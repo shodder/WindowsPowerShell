@@ -119,6 +119,7 @@ $si = Join-Path -Path $bus -ChildPath 'sisites'
 $users = Join-Path -Path $bus -ChildPath 'Users'
 $userofficetools = Join-Path -Path $bus -ChildPath 'UserOfficeTools'
 $messages = Join-Path -Path $bus -ChildPath 'Messages'
+$facilitiesSharePoint = Join-Path -Path $bus -ChildPath 'facilities-sharepoint'
 
 $ps = Join-Path -Path $HOME -ChildPath 'Documents/WindowsPowerShell'
 $dots = Join-Path -Path $HOME -ChildPath 'dotfiles'
@@ -144,6 +145,7 @@ function releasenotes { Set-Location $releasenotes }
 function fbs { Set-Location $fbs }
 function bissettings { Set-Location $bissettings }
 function releasenotes { Set-Location $releasenotes }
+function facsp { Set-Location $facilitiesSharePoint }
 
 function onedrive {
     cd 'C:\Users\mhr39349\OneDrive - Science and Technology Facilities Council'
