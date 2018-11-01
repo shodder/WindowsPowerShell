@@ -1,11 +1,24 @@
 
+function Get-PayaraDir {
+    param(
+        [string]$PayaraVersion="4"
+    )
+
+    if ($PayaraVersion -eq "4") {
+        return $PAYARA_BIN_DIR="C:\payara\installations\payara-4.1.2.172\payara41\bin"
+    } else {
+        return $PAYARA_BIN_DIR="C:\payara\installations\payara-5.183\payara5\bin"
+    }
+}
+
 function Start-Domain {
     param(
         [String]$DomainNumber="1",
         [String]$Debug=$false,
-        [String]$LaunchAdminWindow=$true
+        [String]$LaunchAdminWindow=$true,
+        [string]$PayaraVersion="4"
     )
-    Push-Location "C:\payara\installations\payara-4.1.2.172\payara41\bin"
+    Push-Location (Get-PayaraDir $PayaraVersion)
 
     $debugSwitch = ""
     if ($debug) {
@@ -22,10 +35,11 @@ function Start-Domain {
 
 function Stop-Domain {
     param(
-        [String]$DomainNumber="1"
+        [String]$DomainNumber="1",
+        [string]$PayaraVersion="4"
     )
 
-    Push-Location "C:\payara\installations\payara-4.1.2.172\payara41\bin"
+    Push-Location (Get-PayaraDir $PayaraVersion)
     .\asadmin.bat stop-domain --domaindir C:\payara\domains "domain$DomainNumber"
     Pop-Location
 }
