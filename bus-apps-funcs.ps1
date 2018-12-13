@@ -128,12 +128,12 @@ New-Alias -Name launch -Value Launch-CommonApps -Force -Option AllScope
 ###########################
 $workspace = Join-Path -Path $HOME -ChildPath 'workspace'
 $scratch = Join-Path -Path $workspace -ChildPath 'scratch'
-$bus = Join-Path -Path $workspace -ChildPath 'isisbusapps'
-$si = Join-Path -Path $bus -ChildPath 'sisites'
-$users = Join-Path -Path $bus -ChildPath 'Users'
-$userofficetools = Join-Path -Path $bus -ChildPath 'UserOfficeTools'
-$messages = Join-Path -Path $bus -ChildPath 'Messages'
-$facilitiesSharePoint = Join-Path -Path $bus -ChildPath 'facilities-sharepoint'
+$busapps = Join-Path -Path $workspace -ChildPath 'isisbusapps'
+$si = Join-Path -Path $busapps -ChildPath 'sisites'
+$users = Join-Path -Path $busapps -ChildPath 'Users'
+$userofficetools = Join-Path -Path $busapps -ChildPath 'UserOfficeTools'
+$messages = Join-Path -Path $busapps -ChildPath 'Messages'
+$facilitiesSharePoint = Join-Path -Path $busapps -ChildPath 'facilities-sharepoint'
 
 $ps = Join-Path -Path $HOME -ChildPath 'Documents/WindowsPowerShell'
 $dots = Join-Path -Path $HOME -ChildPath 'dotfiles'
@@ -147,7 +147,7 @@ $bissettings = $fbs
 # Shortcut functions
 function ws { Set-Location $workspace }
 function scratch { Set-Location $scratch }
-function bus { Set-Location $bus }
+function busapps { Set-Location $busapps }
 function sites { Set-Location $si }
 function users { Set-Location $users }
 function userofficetools { Set-Location $userofficetools }

@@ -9,8 +9,10 @@ Push-Location (Split-Path -Path $MyInvocation.MyCommand.Definition -Parent)
 # If module is installed in a default location ($env:PSModulePath),
 # use this instead (see about_Modules for more information):
 Import-Module posh-git
+Import-Module oh-my-posh
+#Set-Theme PowerLine
 
-# Set up a simple prompt, adding the git prompt parts inside git repos
+ #Set up a simple prompt, adding the git prompt parts inside git repos
 function global:prompt {
     $realLASTEXITCODE = $LASTEXITCODE
 
