@@ -5,9 +5,9 @@ function Get-PayaraDir {
     )
 
     if ($PayaraVersion -eq "4") {
-        return $PAYARA_BIN_DIR="C:\payara\installations\payara-4.1.2.172\payara41\bin"
+        return $PAYARA_BIN_DIR="$($env:PAYARA_HOME)\payara41\bin"
     } else {
-        return $PAYARA_BIN_DIR="C:\payara\installations\payara-5.183\payara5\bin"
+        return $PAYARA_BIN_DIR="$($env:PAYARA_HOME)\payara-5.183\payara5\bin"
     }
 }
 
