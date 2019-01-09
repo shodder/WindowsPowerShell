@@ -93,6 +93,7 @@ New-Alias -Name vsadmin -Value Start-VisualStudioAsAdmin -Force -Option AllScope
 
 function Launch-Firefox {
     & 'C:\Program Files\Mozilla Firefox\firefox.exe' `
+        'https://mail.protonmail.com/inbox' `
         'https://www.gmail.com' `
         'https://github.com/orgs/isisbusapps/dashboard' `
         'https://github.com/pulls?utf8=%E2%9C%93&q=is%3Aopen+org%3Aisisbusapps+label%3A%22please+review%22+sort%3Aupdated-asc+-repo%3Aisisbusapps%2Fsandbox' `
