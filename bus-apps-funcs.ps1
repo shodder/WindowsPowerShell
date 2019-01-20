@@ -108,8 +108,7 @@ function Launch-Outlook {
 
 function Launch-Chrome {
    & 'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe' `
-        'https://trello.com/b/o1PxTdzd/mi-tabla' `
-        'https://trello.com/b/EZVcf2Bw/init' `
+        'https://trello.com/b/o1PxTdzd/init' `
         'https://tasks.office.com/stfc365.onmicrosoft.com/en-US/Home/Planner' `
         'https://trello.com/b/Mdz1UwRy/projects-2018' `
         'https://trello.com/b/x07EBJGu/sw-dev'
