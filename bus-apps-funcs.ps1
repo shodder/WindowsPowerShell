@@ -148,6 +148,7 @@ $bissettings = $fbs
 function ws { Set-Location $workspace }
 function scratch { Set-Location $scratch }
 function busapps { Set-Location $busapps }
+function ba { Set-Location $busapps }
 function sites { Set-Location $si }
 function users { Set-Location $users }
 function userofficetools { Set-Location $userofficetools }
