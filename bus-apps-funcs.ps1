@@ -81,15 +81,22 @@ New-Alias -Name github -Value Open-Repo -Force -Option AllScope
 
 function Start-VisualStudioAsAdmin {
     param(
-        [String]$Credential='clrc\mhr3934903'
+        [String]$Credential='clrc\mhr3934903',
+        [String]$Version='2019'
     )
 
-    $vsPath =  'C:\Program Files (x86)\Microsoft Visual Studio\2017\Enterprise\Common7\IDE\devenv.exe'
+    $vsPath =  "C:\Program Files (x86)\Microsoft Visual Studio\$Version\Enterprise\Common7\IDE\devenv.exe"
     $cmd = "-noprofile -command &{Start-Process '$vsPath' -verb runas}"
     Start-Process PowerShell -Credential $Credential -ArgumentList $cmd
 }
 
 New-Alias -Name vsadmin -Value Start-VisualStudioAsAdmin -Force -Option AllScope
+
+function Start-VisualStudioAsAdmin2017 {
+    Start-VisualStudioAsAdmin -Version "2017"
+}
+
+New-Alias -Name vsadmin17 -Value Start-VisualStudioAsAdmin2017 -Force -Option AllScope
 
 function Launch-Firefox {
     & 'C:\Program Files\Mozilla Firefox\firefox.exe' `
