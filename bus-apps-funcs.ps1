@@ -98,7 +98,7 @@ function Start-VisualStudioAsAdmin2017 {
 
 New-Alias -Name vsadmin17 -Value Start-VisualStudioAsAdmin2017 -Force -Option AllScope
 
-function Launch-Firefox {
+function Launch-Me {
     & 'C:\Program Files\Mozilla Firefox\firefox.exe' `
         'https://mail.protonmail.com/inbox' `
         'https://www.gmail.com' `
@@ -106,15 +106,15 @@ function Launch-Firefox {
         'https://github.com/pulls?utf8=%E2%9C%93&q=is%3Aopen+org%3Aisisbusapps+label%3A%22review:+please%22+sort%3Aupdated-asc+-repo%3Aisisbusapps%2Fsandbox' `
         'https://github.com/orgs/isisbusapps/projects/7' `
         'https://github.com/orgs/isisbusapps/projects/9?card_filter_query=author%3Ashodder'
- 
+
 }
 
 function Launch-Outlook {
     & 'C:\Program Files (x86)\Microsoft Office\Office16\OUTLOOK.EXE'
 }
 
-function Launch-Chrome {
-   & 'C:\Program Files (x86)\Google\Chrome\Application\chrome.exe' `
+function Launch-Planners {
+   & 'C:\Program Files\Mozilla Firefox\firefox.exe' `
         'https://trello.com/b/o1PxTdzd/init' `
         'https://tasks.office.com/stfc365.onmicrosoft.com/en-US/Home/Planner' `
         'https://trello.com/b/Mdz1UwRy/busapps-projects' `
@@ -122,8 +122,8 @@ function Launch-Chrome {
 }
 
 function Launch-CommonApps {
-    Launch-Firefox
-    Launch-Chrome
+    Launch-Me
+    Launch-Planners
     Launch-Outlook
     exit
 }
