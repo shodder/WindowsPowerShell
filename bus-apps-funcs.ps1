@@ -101,7 +101,7 @@ New-Alias -Name vsadmin17 -Value Start-VisualStudioAsAdmin2017 -Force -Option Al
 function Launch-Me {
     & 'C:\Program Files\Mozilla Firefox\firefox.exe' `
         'https://mail.protonmail.com/inbox' `
-        'https://www.gmail.com' `
+        'https://twitter.com/' `
         'https://github.com/orgs/isisbusapps/dashboard' `
         'https://github.com/pulls?utf8=%E2%9C%93&q=is%3Aopen+org%3Aisisbusapps+label%3A%22review:+please%22+sort%3Aupdated-asc+-repo%3Aisisbusapps%2Fsandbox' `
         'https://github.com/orgs/isisbusapps/projects/7' `
@@ -117,8 +117,6 @@ function Launch-Planners {
    & 'C:\Program Files\Mozilla Firefox\firefox.exe' `
         'https://trello.com/b/o1PxTdzd/init' `
         'https://tasks.office.com/stfc365.onmicrosoft.com/en-US/Home/Planner' `
-        'https://trello.com/b/Mdz1UwRy/busapps-projects' `
-        'https://trello.com/b/x07EBJGu/sw-dev'
 }
 
 function Launch-CommonApps {
@@ -142,7 +140,7 @@ $userofficetools = Join-Path -Path $busapps -ChildPath 'UserOfficeTools'
 $messages = Join-Path -Path $busapps -ChildPath 'Messages'
 $facilitiesSharePoint = Join-Path -Path $busapps -ChildPath 'facilities-sharepoint'
 
-$ps = Join-Path -Path $HOME -ChildPath 'Documents/WindowsPowerShell'
+$ps = Join-Path -Path $HOME -ChildPath 'Documents/PowerShell'
 $dots = Join-Path -Path $HOME -ChildPath 'dotfiles'
 
 $gopath = $env:GOPATH
