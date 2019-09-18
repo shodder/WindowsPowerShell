@@ -102,9 +102,6 @@ function Launch-Me {
     & 'C:\Program Files\Mozilla Firefox\firefox.exe' `
         'https://mail.protonmail.com/inbox' `
         'https://twitter.com/' `
-        'https://github.com/orgs/isisbusapps/dashboard' `
-        'https://github.com/pulls?utf8=%E2%9C%93&q=is%3Aopen+org%3Aisisbusapps+label%3A%22review:+please%22+sort%3Aupdated-asc+-repo%3Aisisbusapps%2Fsandbox' `
-        'https://github.com/orgs/isisbusapps/projects/7' `
         'https://github.com/orgs/isisbusapps/projects/9?card_filter_query=author%3Ashodder'
 
 }
@@ -117,6 +114,8 @@ function Launch-Planners {
    & 'C:\Program Files\Mozilla Firefox\firefox.exe' `
         'https://trello.com/b/o1PxTdzd/init' `
         'https://tasks.office.com/stfc365.onmicrosoft.com/en-US/Home/Planner' `
+        'https://trello.com/b/kzo6t6CT/team-boards' `
+        'https://trello.com/b/7q0YQ93H/slm-board'
 }
 
 function Launch-CommonApps {
