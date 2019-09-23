@@ -102,7 +102,7 @@ function Launch-Me {
     & 'C:\Program Files\Mozilla Firefox\firefox.exe' `
         'https://mail.protonmail.com/inbox' `
         'https://twitter.com/' `
-        'https://github.com/orgs/isisbusapps/projects/9?card_filter_query=author%3Ashodder'
+
 
 }
 
@@ -113,8 +113,8 @@ function Launch-Outlook {
 function Launch-Planners {
    & 'C:\Program Files\Mozilla Firefox\firefox.exe' `
         'https://trello.com/b/o1PxTdzd/init' `
+        'https://github.com/orgs/isisbusapps/projects/9?card_filter_query=author%3Ashodder' `
         'https://tasks.office.com/stfc365.onmicrosoft.com/en-US/Home/Planner' `
-        'https://trello.com/b/kzo6t6CT/team-boards' `
         'https://trello.com/b/7q0YQ93H/slm-board'
 }
 
