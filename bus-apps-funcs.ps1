@@ -102,8 +102,7 @@ function Launch-Me {
     & 'C:\Program Files\Mozilla Firefox\firefox.exe' `
         'https://mail.protonmail.com/inbox' `
         'https://twitter.com/' `
-
-
+        'https://www.yammer.com/stfc.ac.uk/#/home'
 }
 
 function Launch-Outlook {
