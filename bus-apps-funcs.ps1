@@ -138,7 +138,7 @@ $userofficetools = Join-Path -Path $busapps -ChildPath 'UserOfficeTools'
 $messages = Join-Path -Path $busapps -ChildPath 'Messages'
 $facilitiesSharePoint = Join-Path -Path $busapps -ChildPath 'facilities-sharepoint'
 
-$ps = Join-Path -Path $HOME -ChildPath 'Documents/PowerShell'
+$ps = Join-Path -Path $HOME -ChildPath 'Documents/WindowsPowerShell'
 $dots = Join-Path -Path $HOME -ChildPath 'dotfiles'
 
 $gopath = $env:GOPATH
