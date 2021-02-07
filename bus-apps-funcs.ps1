@@ -65,16 +65,7 @@ function Open-PayaraAdmin {
         $urlWithPort = $Url + ":15562"
     }
 
-    & "C:\Program Files\Mozilla Firefox\firefox.exe" $urlWithPort
-}
-
-function Open-Repo {
-    param(
-        [String]$Repo="Users"
-    )
-
-    $url = "https://www.github.com/isisbusapps/" + $Repo
-    & "C:\Program Files\Mozilla Firefox\firefox.exe" $url
+    & "C:\Program Files\Google\Chrome\Application\chrome.exe" $urlWithPort
 }
 
 New-Alias -Name github -Value Open-Repo -Force -Option AllScope
