@@ -144,7 +144,7 @@ function onedrive {
 }
 
 function Run-OracleDev {
-    & 'C:\Users\mhr39349\programs\oracle-developer\sqldeveloper.exe'
+    & 'C:\oracle-sql-developer\sqldeveloper.exe'
 }
 
 New-Alias -Name oracledev -Value Run-OracleDev -Force -Option AllScope
